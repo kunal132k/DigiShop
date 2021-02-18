@@ -1,0 +1,22 @@
+{
+  "name": "digishop",
+  "version": "1.0.0",
+  "description": "MERN digital shopping app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal132k/DigiShop.git"
+  },
+  "author": "Kunal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kunal132k/DigiShop/issues"
+  },
+  "homepage": "https://github.com/kunal132k/DigiShop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
