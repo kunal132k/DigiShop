@@ -175,19 +175,19 @@ const OrderScreen = ({ match }) => {
                 </Row>
               </ListGroup.Item>
               {loadingPay && <Loader />}
-              {userInfo.isAdmin && !order.isPaid && (
+              { !order.isPaid && (
                 <ListGroup.Item>
                   <Button
                     type='button'
                     className='btn btn-block'
                     onClick={paidHandler}
                   >
-                    Mark As Paid
+                   {userInfo.isAdmin ? `Mark As Paid` : `Pay` }
                   </Button>
                 </ListGroup.Item>
               )}
               {loadingDeliver && <Loader />}
-              { order.isPaid && !order.isDelivered && (
+              {userInfo.isAdmin && order.isPaid && !order.isDelivered && (
                 <ListGroup.Item>
                   <Button
                     type='button'
